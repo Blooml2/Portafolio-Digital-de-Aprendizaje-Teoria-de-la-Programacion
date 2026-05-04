@@ -1,7 +1,6 @@
 <div align="center">
 <img width="415" height="138" alt="image" src="https://github.com/user-attachments/assets/86e07b37-39c2-42a5-80e6-1649b8c56027" />
 
-# 🎓 Universidad Nacional de Loja
 ### Área de la Energía, las Industrias y los Recursos Naturales No Renovables
 ### Carrera de Computación
 
