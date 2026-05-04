@@ -9,7 +9,7 @@
 
 ---
 
-## 📝 Contenidos
+## Contenidos
 
 ### 🔹 Algoritmo
 Conjunto de pasos ordenados, finitos y bien definidos que permiten resolver un problema o realizar una tarea específica. Todo algoritmo debe tener un inicio, un proceso y un fin.
@@ -37,15 +37,15 @@ Paradigma visual de programación donde las instrucciones se representan como bl
 
 ---
 
-## 💻 Ejercicio con Estructura Secuencial — Lenguaje C
+## Ejercicio con Estructura Secuencial — Lenguaje C
 
-### 📌 Planteamiento del Problema
+### Planteamiento del Problema
 
 Desarrollar un programa en lenguaje C que calcule el **Índice de Masa Corporal (IMC)** de una persona. El programa debe solicitar el peso en kilogramos y la altura en metros, realizar el cálculo correspondiente y mostrar el resultado en pantalla.
 
 ---
 
-### 🔍 Análisis del Problema
+### Análisis del Problema
 
 | Elemento | Descripción |
 |----------|-------------|
@@ -58,7 +58,7 @@ Desarrollar un programa en lenguaje C que calcule el **Índice de Masa Corporal 
 
 ---
 
-### 🗂️ Diseño del Algoritmo
+### Diseño del Algoritmo
 
 #### Pseudocódigo (PseInt)
 
@@ -82,11 +82,13 @@ Algoritmo CalcularIMC
 FinAlgoritmo
 ```
 
-> 📊 *El diagrama de flujo se adjunta por separado.*
+#### Diagrama de flujo
+<img width="444" height="679" alt="image" src="https://github.com/user-attachments/assets/0df7c91e-661f-4a2c-9107-562621d7a69b" />
+
 
 ---
 
-### 🖥️ Codificación — Código Fuente en C
+### Codificación — Código Fuente en C
 
 > 📄 Archivo: [`codigo/imc.c`](./codigo/imc.c)
 
@@ -116,7 +118,7 @@ int main() {
 }
 ```
 
-#### 🧪 Prueba de Escritorio
+#### Prueba de Escritorio
 
 > **Datos de prueba:** peso = `70 kg` · altura = `1.75 m`
 
@@ -141,7 +143,7 @@ Su IMC es: 22.86
 
 ---
 
-## 💬 Principales Dificultades y Reflexión Crítica
+## Principales Dificultades y Reflexión Crítica
 
 Al empezar con C lo que más me costó fue el `printf` y el `scanf`. No entendía bien para qué servían los formatos como `%f`, y con el `scanf` siempre olvidaba poner el `&` antes de la variable, lo que hacía que el programa no guardara bien los datos. Con práctica fui entendiéndolo poco a poco.
 
