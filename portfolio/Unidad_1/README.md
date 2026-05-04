@@ -150,5 +150,5 @@ En lo académico estos contenidos son una buena base para las materias que viene
 ---
 
 <div align="center">
-<a href="../README.md">⬅️ Volver al inicio</a>
+<a href="../README.md">Volver al inicio</a>
 </div>
