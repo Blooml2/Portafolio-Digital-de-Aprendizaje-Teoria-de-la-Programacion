@@ -11,19 +11,19 @@
 
 ## Contenidos
 
-### 🔹 Algoritmo
+### Algoritmo:
 Conjunto de pasos ordenados, finitos y bien definidos que permiten resolver un problema o realizar una tarea específica. Todo algoritmo debe tener un inicio, un proceso y un fin.
 
-### 🔹 Pseudocódigo
+### Pseudocódigo:
 Representación textual de un algoritmo usando un lenguaje intermedio entre el lenguaje natural y el lenguaje de programación. No pertenece a ningún lenguaje en específico, pero permite expresar la lógica antes de codificar.
 
-### 🔹 Diagrama de Flujo
+### Diagrama de Flujo:
 Representación gráfica de un algoritmo mediante símbolos estandarizados (óvalos, rombos, rectángulos, flechas) que muestran el flujo y orden de ejecución de las instrucciones.
 
-### 🔹 Prueba de Escritorio
+### Prueba de Escritorio:
 Técnica manual que consiste en seguir paso a paso un algoritmo con valores específicos, registrando el estado de cada variable, con el objetivo de verificar que el algoritmo funciona correctamente antes de ejecutarlo.
 
-### 🔹 Lenguajes de Programación
+### Lenguajes de Programación:
 Lenguajes formales compuestos por instrucciones que le indican a una computadora qué acciones realizar. Los lenguajes vistos en clase son:
 
 | Lenguaje | Tipo | Característica principal |
@@ -32,20 +32,20 @@ Lenguajes formales compuestos por instrucciones que le indican a una computadora
 | **Java** | Compilado/Interpretado | Orientado a objetos, multiplataforma gracias a la JVM |
 | **Python** | Interpretado | Sintaxis simple y legible, muy usado en ciencia de datos e IA |
 
-### 🔹 Programación por Bloques
+### Programación por Bloques:
 Paradigma visual de programación donde las instrucciones se representan como bloques gráficos que se ensamblan entre sí, similar a un rompecabezas. Facilita el aprendizaje de la lógica de programación sin necesidad de memorizar una sintaxis compleja. Un ejemplo conocido es **Scratch**.
 
 ---
 
 ## Ejercicio con Estructura Secuencial — Lenguaje C
 
-### Planteamiento del Problema
+### Planteamiento del Problema:
 
 Desarrollar un programa en lenguaje C que calcule el **Índice de Masa Corporal (IMC)** de una persona. El programa debe solicitar el peso en kilogramos y la altura en metros, realizar el cálculo correspondiente y mostrar el resultado en pantalla.
 
 ---
 
-### Análisis del Problema
+### Análisis del Problema:
 
 | Elemento | Descripción |
 |----------|-------------|
@@ -60,7 +60,7 @@ Desarrollar un programa en lenguaje C que calcule el **Índice de Masa Corporal 
 
 ### Diseño del Algoritmo
 
-#### Pseudocódigo (PseInt)
+#### Pseudocódigo (PseInt):
 
 ```pseint
 Algoritmo CalcularIMC
@@ -80,13 +80,13 @@ Algoritmo CalcularIMC
 FinAlgoritmo
 ```
 
-#### Diagrama de flujo
+#### Diagrama de flujo:
 <img width="444" height="679" alt="image" src="https://github.com/user-attachments/assets/0df7c91e-661f-4a2c-9107-562621d7a69b" />
 
 
 ---
 
-### Codificación — Código Fuente en C
+### Codificación — Código Fuente en C:
 
 > 📄 Archivo: [`codigo/imc.c`](./codigo/imc.c)
 
@@ -96,9 +96,9 @@ FinAlgoritmo
 int main() {
     float peso, altura, imc;
 
-    printf("================================\n");
+
     printf("      CALCULADORA DE IMC        \n");
-    printf("================================\n");
+    printf("\n");
 
     printf("Ingrese su peso en kg: ");
     scanf("%f", &peso);
@@ -107,10 +107,9 @@ int main() {
     scanf("%f", &altura);
 
     imc = peso / (altura * altura);
-
-    printf("================================\n");
+ 
     printf("Su IMC es: %.2f\n", imc);
-    printf("================================\n");
+
 
     return 0;
 }
@@ -129,14 +128,13 @@ int main() {
 
 **Salida esperada:**
 ```
-================================
       CALCULADORA DE IMC        
-================================
+
 Ingrese su peso en kg: 70
 Ingrese su altura en metros: 1.75
-================================
+
 Su IMC es: 22.86
-================================
+
 ```
 
 ---
