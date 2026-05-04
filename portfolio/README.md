@@ -1,4 +1,5 @@
 <div align="center">
+<img width="263" height="150" alt="image" src="https://github.com/user-attachments/assets/69ecd6bb-1ebb-466f-950c-f0bffdc5bdf2" />
 
 # 🎓 Universidad Nacional de Loja
 ### Área de la Energía, las Industrias y los Recursos Naturales No Renovables
