@@ -76,7 +76,7 @@ FinSi
 
 <div align="center">
 
-> 🖼️ *Diagrama de flujo — pendiente de adjuntar*
+![Diagrama2](./diagrama2.png)
 
 </div>
 
@@ -100,7 +100,7 @@ FinSegun
 
 <div align="center">
 
-> 🖼️ *Diagrama de flujo — pendiente de adjuntar*
+![Diagrama7](./diagrama7.jpeg)
 
 </div>
 
@@ -125,7 +125,7 @@ FinMientras
 
 <div align="center">
 
-> 🖼️ *Diagrama de flujo — pendiente de adjuntar*
+![Diagrama5](./diagrama5.jepg)
 
 </div>
 
@@ -144,7 +144,7 @@ FinPara
 
 <div align="center">
 
-> 🖼️ *Diagrama de flujo — pendiente de adjuntar*
+![Diagrama4](./diagrama4.jepg)
 
 </div>
 
@@ -163,7 +163,7 @@ Hasta Que condicion
 
 <div align="center">
 
-> 🖼️ *Diagrama de flujo — pendiente de adjuntar*
+![Diagrama5](./diagrama5.jepg)
 
 </div>
 
