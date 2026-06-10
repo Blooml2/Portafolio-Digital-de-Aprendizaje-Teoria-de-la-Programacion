@@ -196,7 +196,7 @@ Desarrollar un programa en C que genere una **serie numérica intercalada** de l
 
 <div align="center">
 
-> 🖼️ *Diagrama de flujo — pendiente de adjuntar*
+![Diagrama11](./diagrama11.png)
 
 </div>
 
