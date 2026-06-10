@@ -51,7 +51,7 @@ FinSi
 
 <div align="center">
 
-> 🖼️ *Diagrama de flujo — pendiente de adjuntar*
+![Diagrama1](./diagrama1.png)
 
 </div>
 
