@@ -28,11 +28,6 @@ Si condicion Entonces
 FinSi
 ```
 
-<div align="center">
-
-> 🖼️ *Diagrama de flujo — pendiente de adjuntar*
-
-</div>
 
 ---
 
@@ -49,11 +44,6 @@ SiNo
 FinSi
 ```
 
-<div align="center">
-
-> 🖼️ *Diagrama de flujo — pendiente de adjuntar*
-
-</div>
 
 ---
 
@@ -74,11 +64,6 @@ SiNo
 FinSi
 ```
 
-<div align="center">
-
-> 🖼️ *Diagrama de flujo — pendiente de adjuntar*
-
-</div>
 
 ---
 
@@ -98,11 +83,6 @@ Segun variable Hacer
 FinSegun
 ```
 
-<div align="center">
-
-> 🖼️ *Diagrama de flujo — pendiente de adjuntar*
-
-</div>
 
 ---
 
@@ -123,11 +103,6 @@ Mientras condicion Hacer
 FinMientras
 ```
 
-<div align="center">
-
-> 🖼️ *Diagrama de flujo — pendiente de adjuntar*
-
-</div>
 
 ---
 
@@ -142,11 +117,6 @@ Para variable <- valorInicial Hasta valorFinal Con Paso incremento Hacer
 FinPara
 ```
 
-<div align="center">
-
-> 🖼️ *Diagrama de flujo — pendiente de adjuntar*
-
-</div>
 
 ---
 
@@ -161,11 +131,6 @@ Repetir
 Hasta Que condicion
 ```
 
-<div align="center">
-
-> 🖼️ *Diagrama de flujo — pendiente de adjuntar*
-
-</div>
 
 ---
 
@@ -202,8 +167,6 @@ Desarrollar un programa en C que calcule la **nota final ponderada** de uno o m�
 ---
 
 ### 🖥️ Codificación — Código Fuente en C
-
-> 📄 Archivo: [`codigo/calificaciones.c`](./codigo/calificaciones.c)
 
 ```c
 #include <stdio.h>
