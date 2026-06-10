@@ -173,7 +173,7 @@ Hasta Que condicion
 
 ### 📌 Planteamiento del Problema
 
-Desarrollar un programa en C que calcule la **nota final ponderada** de uno o más estudiantes a partir de cuatro componentes de evaluación: ACD, AA, APE y ES. El programa debe validar que el número de estudiantes sea al menos uno y que cada nota ingresada esté en el rango de 0 a 10. Al final debe mostrar las notas ponderadas, la nota final y el nivel de desempeño de cada estudiante.
+Desarrollar un programa en C que genere una **serie numérica intercalada** de longitud definida por el usuario. La serie alterna entre dos secuencias aritméticas: una que comienza en 1 e incrementa de 2 en 2, y otra que comienza en 5 e incrementa de 2 en 2. La secuencia a imprimir en cada posición depende de si el índice es par o impar.
 
 ---
 
@@ -181,11 +181,12 @@ Desarrollar un programa en C que calcule la **nota final ponderada** de uno o m�
 
 | Elemento | Descripción |
 |----------|-------------|
-| **Entrada** | Cantidad de estudiantes (`totalEstudiantes`) |
-| | Nota ACD (`n1`), Nota AA (`n2`), Nota APE (`n3`), Nota ES (`n4`) — rango: 0 a 10 |
-| **Proceso** | Ponderación: `ACD×0.2 + AA×0.2 + APE×0.2 + ES×0.4` |
-| | Evaluación: Excelente (≥9) / Bueno (≥7) / Regular (≥5) / Deficiente (<5) |
-| **Salida** | Notas ponderadas individuales, nota final y nivel de desempeño |
+| **Entrada** | Longitud de la serie (`longitud`) — número entero positivo |
+| **Proceso** | Para cada posición `i` de `0` a `longitud-1`: |
+| | Si `i` es par → imprimir `var1` (inicia en 1, incrementa en 2) |
+| | Si `i` es impar → imprimir `var2` (inicia en 5, incrementa en 2) |
+| | Separar términos con `, ` excepto el último |
+| **Salida** | Serie numérica intercalada. Ej. con longitud 6: `1, 5, 3, 7, 5, 9` |
 
 ---
 
@@ -195,91 +196,47 @@ Desarrollar un programa en C que calcule la **nota final ponderada** de uno o m�
 
 <div align="center">
 
-![Diagrama](./diagrama.png)
+> 🖼️ *Diagrama de flujo — pendiente de adjuntar*
 
 </div>
 
+---
 
 ### 🖥️ Codificación — Código Fuente en C
 
-> 📄 Archivo: [`codigo/calificaciones.c`](./codigo/calificaciones.c)
+> 📄 Archivo: [`codigo/serie.c`](./codigo/serie.c)
 
 ```c
 #include <stdio.h>
 
 int main() {
-    // Declaracion de variables
-    int totalEstudiantes, i;
-    float n1, n2, n3, n4, nf;
+    int longitud;
+    int var1 = 1;
+    int var2 = 5;
 
-    // Ingreso de la cantidad de estudiantes con validacion (minimo 1)
-    do {
-        printf("Ingrese la cantidad total de estudiantes: ");
-        scanf("%d", &totalEstudiantes);
-        if (totalEstudiantes <= 0) {
-            printf("Error: Debe ingresar al menos 1 estudiante.\n");
+    // Solicitar al usuario la cantidad de términos
+    printf("Ingrese la longitud de la serie (cantidad de terminos): ");
+    if (scanf("%d", &longitud) != 1 || longitud <= 0) {
+        printf("Por favor, ingrese un numero entero positivo valido.\n");
+        return 1;
+    }
+
+    printf("Serie: ");
+    for (int i = 0; i < longitud; i++) {
+        // Si 'i' es par, imprime var1 y la incrementa
+        if (i % 2 == 0) {
+            printf("%d", var1);
+            var1 += 2;
+        } 
+        // Si 'i' es impar, imprime var2 y la incrementa
+        else {
+            printf("%d", var2);
+            var2 += 2;
         }
-    } while (totalEstudiantes <= 0);
 
-    // Bucle principal para procesar cada estudiante
-    for (i = 1; i <= totalEstudiantes; i++) {
-        printf("\n    Estudiante %d    \n", i);
-
-        // Entrada de datos con validacion (0 a 10)
-        do {
-            printf("Ingrese el valor del ACD: ");
-            scanf("%f", &n1);
-            if (n1 < 0 || n1 > 10) {
-                printf("Error: La nota debe estar entre 0 y 10.\n");
-            }
-        } while (n1 < 0 || n1 > 10);
-
-        do {
-            printf("Ingrese el valor del AA: ");
-            scanf("%f", &n2);
-            if (n2 < 0 || n2 > 10) {
-                printf("Error: La nota debe estar entre 0 y 10.\n");
-            }
-        } while (n2 < 0 || n2 > 10);
-
-        do {
-            printf("Ingrese el valor del APE: ");
-            scanf("%f", &n3);
-            if (n3 < 0 || n3 > 10) {
-                printf("Error: La nota debe estar entre 0 y 10.\n");
-            }
-        } while (n3 < 0 || n3 > 10);
-
-        do {
-            printf("Ingrese el valor del ES: ");
-            scanf("%f", &n4);
-            if (n4 < 0 || n4 > 10) {
-                printf("Error: La nota debe estar entre 0 y 10.\n");
-            }
-        } while (n4 < 0 || n4 > 10);
-
-        // Proceso de ponderacion
-        n1 *= 0.2;
-        n2 *= 0.2;
-        n3 *= 0.2;
-        n4 *= 0.4;
-        nf = n1 + n2 + n3 + n4;
-
-        // Salidas individuales
-        printf("La nota ponderada del ACD es: %.2f\n", n1);
-        printf("La nota ponderada del AA es: %.2f\n", n2);
-        printf("La nota ponderada del APE es: %.2f\n", n3);
-        printf("La nota ponderada del ES es: %.2f\n", n4);
-
-        // Evaluacion del desempeno
-        if (nf >= 9) {
-            printf("Estudiante %d, tu nota final es: %.2f. Tu desempeno esta unidad fue Excelente.\n", i, nf);
-        } else if (nf < 9 && nf >= 7) {
-            printf("Estudiante %d, tu nota final es: %.2f. Tu desempeno esta unidad fue Bueno.\n", i, nf);
-        } else if (nf < 7 && nf >= 5) {
-            printf("Estudiante %d, tu nota final es: %.2f. Tu desempeno esta unidad fue Regular.\n", i, nf);
-        } else {
-            printf("Estudiante %d, tu nota final es: %.2f. Tu desempeno esta unidad fue Deficiente.\n", i, nf);
+        // Imprime una coma y un espacio entre los números, excepto en el último
+        if (i < longitud - 1) {
+            printf(", ");
         }
     }
 
@@ -291,30 +248,22 @@ int main() {
 
 ### 🧪 Validación — Prueba de Escritorio
 
-> **Datos de prueba:** 1 estudiante · ACD = `8` · AA = `7` · APE = `9` · ES = `6`
+> **Dato de prueba:** `longitud = 6`
 
-| Paso | Instrucción | `totalEstudiantes` | `n1` | `n2` | `n3` | `n4` | `nf` |
-|------|-------------|:------------------:|------|------|------|------|------|
-| 1 | `Leer totalEstudiantes` | 1 | — | — | — | — | — |
-| 2 | `Leer n1 (ACD)` | 1 | 8 | — | — | — | — |
-| 3 | `Leer n2 (AA)` | 1 | 8 | 7 | — | — | — |
-| 4 | `Leer n3 (APE)` | 1 | 8 | 7 | 9 | — | — |
-| 5 | `Leer n4 (ES)` | 1 | 8 | 7 | 9 | 6 | — |
-| 6 | `n1 = 8 × 0.2` | 1 | 1.60 | 7 | 9 | 6 | — |
-| 7 | `n2 = 7 × 0.2` | 1 | 1.60 | 1.40 | 9 | 6 | — |
-| 8 | `n3 = 9 × 0.2` | 1 | 1.60 | 1.40 | 1.80 | 6 | — |
-| 9 | `n4 = 6 × 0.4` | 1 | 1.60 | 1.40 | 1.80 | 2.40 | — |
-| 10 | `nf = 1.60+1.40+1.80+2.40` | 1 | 1.60 | 1.40 | 1.80 | 2.40 | 7.20 |
-| 11 | `nf >= 7` → Bueno | 1 | 1.60 | 1.40 | 1.80 | 2.40 | 7.20 |
+| `i` | `i % 2` | Condición | `var1` | `var2` | Imprime |
+|:---:|:-------:|-----------|:------:|:------:|---------|
+| — | — | Valores iniciales | 1 | 5 | — |
+| 0 | 0 | par → imprime `var1` | 1 → 3 | 5 | `1, ` |
+| 1 | 1 | impar → imprime `var2` | 3 | 5 → 7 | `5, ` |
+| 2 | 0 | par → imprime `var1` | 3 → 5 | 7 | `3, ` |
+| 3 | 1 | impar → imprime `var2` | 5 | 7 → 9 | `7, ` |
+| 4 | 0 | par → imprime `var1` | 5 → 7 | 9 | `5, ` |
+| 5 | 1 | impar → imprime `var2` | 7 | 9 → 11 | `9` |
 
 **Salida esperada:**
 ```
-    Estudiante 1
-La nota ponderada del ACD es: 1.60
-La nota ponderada del AA es: 1.40
-La nota ponderada del APE es: 1.80
-La nota ponderada del ES es: 2.40
-Estudiante 1, tu nota final es: 7.20. Tu desempeno esta unidad fue Bueno.
+Ingrese la longitud de la serie (cantidad de terminos): 6
+Serie: 1, 5, 3, 7, 5, 9
 ```
 
 ---
