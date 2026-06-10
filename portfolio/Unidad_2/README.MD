@@ -30,7 +30,7 @@ FinSi
 
 <div align="center">
 
-> 🖼️ *Diagrama de flujo — pendiente de adjuntar*
+![Diagrama9](./diagrama9.png)
 
 </div>
 
@@ -125,7 +125,7 @@ FinMientras
 
 <div align="center">
 
-![Diagrama5](./diagrama5.jepg)
+![Diagrama5](./diagrama5.jpeg)
 
 </div>
 
@@ -144,7 +144,7 @@ FinPara
 
 <div align="center">
 
-![Diagrama4](./diagrama4.jepg)
+![Diagrama4](./diagrama4.jpeg)
 
 </div>
 
@@ -163,7 +163,7 @@ Hasta Que condicion
 
 <div align="center">
 
-![Diagrama5](./diagrama5.jepg)
+![Diagrama5](./diagrama5.jpeg)
 
 </div>
 
