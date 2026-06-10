@@ -1,0 +1,80 @@
+#include <stdio.h>
+
+int main() {
+    // Declaracion de variables
+    int totalEstudiantes, i;
+    float n1, n2, n3, n4, nf;
+
+    // Ingreso de la cantidad de estudiantes con validacion (minimo 1)
+    do {
+        printf("Ingrese la cantidad total de estudiantes: ");
+        scanf("%d", &totalEstudiantes);
+        if (totalEstudiantes <= 0) {
+            printf("Error: Debe ingresar al menos 1 estudiante.\n");
+        }
+    } while (totalEstudiantes <= 0);
+
+    // Bucle principal para procesar cada estudiante
+    for (i = 1; i <= totalEstudiantes; i++) {
+        printf("\n    Estudiante %d    \n", i);
+
+        // Entrada de datos con validacion (0 a 10)
+        do {
+            printf("Ingrese el valor del ACD: ");
+            scanf("%f", &n1);
+            if (n1 < 0 || n1 > 10) {
+                printf("Error: La nota debe estar entre 0 y 10.\n");
+            }
+        } while (n1 < 0 || n1 > 10);
+
+        do {
+            printf("Ingrese el valor del AA: ");
+            scanf("%f", &n2);
+            if (n2 < 0 || n2 > 10) {
+                printf("Error: La nota debe estar entre 0 y 10.\n");
+            }
+        } while (n2 < 0 || n2 > 10);
+
+        do {
+            printf("Ingrese el valor del APE: ");
+            scanf("%f", &n3);
+            if (n3 < 0 || n3 > 10) {
+                printf("Error: La nota debe estar entre 0 y 10.\n");
+            }
+        } while (n3 < 0 || n3 > 10);
+
+        do {
+            printf("Ingrese el valor del ES: ");
+            scanf("%f", &n4);
+            if (n4 < 0 || n4 > 10) {
+                printf("Error: La nota debe estar entre 0 y 10.\n");
+            }
+        } while (n4 < 0 || n4 > 10);
+
+        // Proceso de ponderacion
+        n1 *= 0.2;
+        n2 *= 0.2;
+        n3 *= 0.2;
+        n4 *= 0.4;
+        nf = n1 + n2 + n3 + n4;
+
+        // Salidas individuales
+        printf("La nota ponderada del ACD es: %.2f\n", n1);
+        printf("La nota ponderada del AA es: %.2f\n", n2);
+        printf("La nota ponderada del APE es: %.2f\n", n3);
+        printf("La nota ponderada del ES es: %.2f\n", n4);
+
+        // Evaluacion del desempeno
+        if (nf >= 9) {
+            printf("Estudiante %d, tu nota final es: %.2f. Tu desempeno esta unidad fue Excelente.\n", i, nf);
+        } else if (nf < 9 && nf >= 7) {
+            printf("Estudiante %d, tu nota final es: %.2f. Tu desempeno esta unidad fue Bueno.\n", i, nf);
+        } else if (nf < 7 && nf >= 5) {
+            printf("Estudiante %d, tu nota final es: %.2f. Tu desempeno esta unidad fue Regular.\n", i, nf);
+        } else {
+            printf("Estudiante %d, tu nota final es: %.2f. Tu desempeno esta unidad fue Deficiente.\n", i, nf);
+        }
+    }
+
+    return 0;
+}
