@@ -44,7 +44,7 @@
 | # | Unidad | Descripción |
 |---|--------|-------------|
 | 1 | [📖 Unidad 1 – Fundamentos de Programación](./Unidad_1/README.md) | Algoritmos, pseudocódigo, diagramas de flujo y estructura secuencial en C |
-| 2 | 📖 [Unidad 2 – Teoría](Unidad_2/codigo) | Código y ejercicios de la segunda unidad |
+| 2 | 📖 [Unidad 2 – Teoría](Unidad_2/README.md) | Código y ejercicios de la segunda unidad |
 ---
 
 <div align="center">
