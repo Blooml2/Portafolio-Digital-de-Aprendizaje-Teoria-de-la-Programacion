@@ -195,7 +195,7 @@ Desarrollar un programa en C que calcule la **nota final ponderada** de uno o m√
 
 <div align="center">
 
-> ![Mi captura](Unidad_2/codigo/captura.png)
+> ![Mi captura](Unidad_2/codigo/diagrama.png)
 
 </div>
 
