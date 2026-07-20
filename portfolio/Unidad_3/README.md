@@ -74,7 +74,8 @@ public class Rectangulo {
 
 > 🖥️ **Salida en terminal (Java):**
 > ```
-> (pegar aquí la salida)
+> <img width="797" height="143" alt="image" src="https://github.com/user-attachments/assets/84fd181e-4b70-4bb2-be13-0151ab6f2acb" />
+
 > ```
 
 ---
