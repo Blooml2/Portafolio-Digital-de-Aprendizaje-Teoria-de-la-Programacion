@@ -132,9 +132,10 @@ int main() {
 ```
 
 > 🖥️ **Salida en terminal (C):**
-> ```
-> (pegar aquí la salida)
-> ```
+> 
+> <img width="792" height="217" alt="image" src="https://github.com/user-attachments/assets/ad5d1b0f-c074-4663-9915-8422c89698e8" />
+
+
 
 ---
 
@@ -161,9 +162,9 @@ public class Conversion {
 ```
 
 > 🖥️ **Salida en terminal (Java):**
-> ```
-> (pegar aquí la salida)
-> ```
+> 
+> <img width="825" height="140" alt="image" src="https://github.com/user-attachments/assets/001dc788-444d-4317-9130-a677a62272fe" />
+
 
 ---
 
@@ -184,9 +185,8 @@ print(f"  {resultado[2]:.4f} km")
 ```
 
 > 🖥️ **Salida en terminal (Python):**
-> ```
-> (pegar aquí la salida)
-> ```
+> 
+> <img width="820" height="113" alt="image" src="https://github.com/user-attachments/assets/7a54be8f-19c4-4257-979e-32f901809700" />
 
 ---
 
@@ -230,9 +230,9 @@ int main() {
 ```
 
 > 🖥️ **Salida en terminal (C):**
-> ```
-> (pegar aquí la salida)
-> ```
+> 
+> <img width="865" height="221" alt="image" src="https://github.com/user-attachments/assets/80e9b0cd-8749-4d21-83f9-c09c15c15f76" />
+
 
 ---
 
@@ -260,10 +260,9 @@ public class Arreglo1D {
 ```
 
 > 🖥️ **Salida en terminal (Java):**
-> ```
-> (pegar aquí la salida)
-> ```
-
+>
+> <img width="801" height="140" alt="image" src="https://github.com/user-attachments/assets/3fb9f66e-eba8-48e6-96d6-d437a04a4f15" />
+ 
 ---
 
 **Python**
@@ -286,9 +285,9 @@ print(f"Promedio: {suma / len(arr):.2f}")
 ```
 
 > 🖥️ **Salida en terminal (Python):**
-> ```
-> (pegar aquí la salida)
-> ```
+> 
+> <img width="805" height="115" alt="image" src="https://github.com/user-attachments/assets/e9344152-2147-45e6-ac77-a45217d77635" />
+
 
 ---
 
@@ -327,9 +326,9 @@ int main() {
 ```
 
 > 🖥️ **Salida en terminal (C):**
-> ```
-> (pegar aquí la salida)
-> ```
+> 
+> <img width="806" height="267" alt="image" src="https://github.com/user-attachments/assets/26b05579-53ff-4001-8bff-d8e9e797094b" />
+
 
 ---
 
@@ -361,9 +360,9 @@ public class Arreglo2D {
 ```
 
 > 🖥️ **Salida en terminal (Java):**
-> ```
-> (pegar aquí la salida)
-> ```
+> 
+> <img width="846" height="175" alt="image" src="https://github.com/user-attachments/assets/138bd196-e0b6-40da-a99f-a3a51b56d5c3" />
+
 
 ---
 
@@ -389,9 +388,9 @@ print("Suma de la diagonal principal:", suma)
 ```
 
 > 🖥️ **Salida en terminal (Python):**
-> ```
-> (pegar aquí la salida)
-> ```
+> 
+> <img width="813" height="162" alt="image" src="https://github.com/user-attachments/assets/ffd72562-f190-4a7a-b6b3-4912743d3e14" />
+
 
 ---
 
@@ -429,9 +428,9 @@ int main() {
 ```
 
 > 🖥️ **Salida en terminal (C):**
-> ```
-> (pegar aquí la salida)
-> ```
+> 
+> <img width="778" height="247" alt="image" src="https://github.com/user-attachments/assets/6be64788-439b-4939-83de-24303235b557" />
+
 
 ---
 
@@ -462,9 +461,8 @@ public class Arreglo3D {
 ```
 
 > 🖥️ **Salida en terminal (Java):**
-> ```
-> (pegar aquí la salida)
-> ```
+> 
+> <img width="797" height="128" alt="image" src="https://github.com/user-attachments/assets/2c23e75f-1abd-4900-b940-455817f36f12" />
 
 ---
 
@@ -488,9 +486,9 @@ print(f"Suma de la capa central: {suma}")
 ```
 
 > 🖥️ **Salida en terminal (Python):**
-> ```
-> (pegar aquí la salida)
-> ```
+> 
+> <img width="792" height="133" alt="image" src="https://github.com/user-attachments/assets/91444213-abb1-44a8-9525-c941fe93b301" />
+
 
 ---
 
