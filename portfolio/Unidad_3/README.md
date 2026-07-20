@@ -42,14 +42,15 @@ int main() {
 
 > 🖥️ **Salida en terminal (C):**
 > ```
-> (pegar aquí la salida)
+> <img width="793" height="175" alt="image" src="https://github.com/user-attachments/assets/88dc3b13-bc86-4fcc-8aea-2ffaa8f06169" />
+
 > ```
 
 ---
 
 **Java**
 ```java
-public class PorValor {
+public class portafolio {
     static void duplicar(int n) {
         n = n * 2;
         System.out.println("Dentro del metodo: " + n);
@@ -65,7 +66,8 @@ public class PorValor {
 
 > 🖥️ **Salida en terminal (Java):**
 > ```
-> (pegar aquí la salida)
+> <img width="800" height="95" alt="image" src="https://github.com/user-attachments/assets/54f96db0-da33-491c-b62d-443806cf8d8a" />
+
 > ```
 
 ---
@@ -83,7 +85,8 @@ print("En main:", x)
 
 > 🖥️ **Salida en terminal (Python):**
 > ```
-> (pegar aquí la salida)
+> <img width="803" height="70" alt="image" src="https://github.com/user-attachments/assets/28a909eb-44c1-44d2-96c6-db560dd9f646" />
+
 > ```
 
 ---
