@@ -46,6 +46,7 @@
 | 1 | [📖 Unidad 1 – Fundamentos de Programación](./Unidad_1/README.md) | Algoritmos, pseudocódigo, diagramas de flujo y estructura secuencial en C |
 | 2 | 📖 [Unidad 2 – Teoría](./Unidad_2/README.md) | Código y ejercicios de la segunda unidad |
 | 3 | 📖 [Unidad 3 – Teoría](./Unidad_3/README.md) | Modularidad y Arreglos |
+| 3 | 📖 [Reflexiones Generales – Teoría](./Reflexiones/README.md) | Reflexiones y conclusiones del semestre |
 | 5 | 📖 [Bibliografía y uso de AI](./Bibliografía_y_uso_de_AI/README.md) | Referencias consultadas para la elaboración de este portafolio (formato IEEE) |
 ---
 
