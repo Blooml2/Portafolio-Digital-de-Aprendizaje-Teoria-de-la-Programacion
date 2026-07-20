@@ -46,9 +46,8 @@ int main() {
 ```
 
 > 🖥️ **Salida en terminal (C):**
-> ```
-> (pegar aquí la salida)
-> ```
+>
+> <img src="https://github.com/user-attachments/assets/277819b4-7b8f-4eda-b11e-b8e720f38894" />
 
 ---
 
