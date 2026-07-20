@@ -21,7 +21,7 @@ La modularidad es un principio de programación que consiste en dividir un progr
 
 Se pasa una **copia** del valor original a la función. Cualquier modificación dentro de la función **no afecta** a la variable original.
 
-> **Ejemplo:** Calcular el área y perímetro de un rectángulo.
+> Ejemplo: Calcular el área y perímetro de un rectángulo.
 
 **C**
 ```c
