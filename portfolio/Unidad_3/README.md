@@ -96,9 +96,10 @@ print(f"Valores originales sin cambios: base = {base}, altura = {altura}")
 ```
 
 > 🖥️ **Salida en terminal (Python):**
-> ```
-> (pegar aquí la salida)
-> ```
+> 
+> <img width="786" height="110" alt="image" src="https://github.com/user-attachments/assets/1b18a096-708e-4e4a-9da2-7dae567f61b7" />
+
+
 
 ---
 
